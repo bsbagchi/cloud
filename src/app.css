@@ -1,3 +1,92 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities'
+@import 'tailwindcss/utilities';
+
+
+:root{
+    --bg-body: #201c32;
+
+    --primary: #2A2541;
+    --Primary-Light: #413C5D;
+    --Secondary: #595478;
+    --Secondary-Light: #706C93;
+    
+    --Accent: #F55C5C;
+    --Accent-Alt: #FFDD15;
+
+    --Border: #4d4d4d;
+    --Border-Light: #808080;
+    --white:#ffffff;
+    --purple:#D1A7E3;
+}
+
+/* inner shadow */
+.shadow-box{
+    -webkit-box-shadow: inset -5px 1px 67px -32px rgb(206, 133, 237);
+-moz-box-shadow: inset -5px 1px 67px -32px rgb(217, 153, 245);
+box-shadow: inset -5px 1px 67px -32px rgb(209, 167, 227);
+}
+
+.shadow-red{
+  box-shadow: 
+    inset 0 0px 12px rgba(236, 72, 153, 0.3),
+    inset 0 0px 6px rgba(236, 72, 153, 0.4);
+
+}
+
+.shadow-blue{
+  box-shadow: 
+    inset 0 0px 12px rgba(86, 137, 239, 0.3),
+    inset 0 0px 6px rgba(95, 139, 222, 0.4);
+
+}
+
+
+*{
+    background-color: var(--bg-body);
+}
+
+
+/* Hide Scrollbar */
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+
+  /* Container with gradient border */
+.gradient-border {
+    position: relative;
+    width: fit-content; /* Adjust width as per your need */
+    max-width: 500px; /* Example max-width */
+    height: 200px; /* Adjust height */
+    border-radius: 15px; /* Rounded corners */
+  
+    /* Gradient border effect */
+    background: linear-gradient(to right, red, blue);
+  
+    /* Transparent box to create the border effect */
+    padding: 4px; /* Border thickness */
+  
+    /* Content background color */
+    box-sizing: border-box; /* Prevent padding affecting dimensions */
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+  
+  .gradient-border .content {
+    background-color: #0d0b1f; /* Inner background (similar to the image) */
+    border-radius: 12px; /* Match border radius */
+    height: 100%; /* Ensure full content area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    font-size: 2rem;
+    text-align: center;
+  }
+  

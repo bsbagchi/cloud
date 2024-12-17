@@ -1,1 +1,4 @@
-<h1 class="bg-green-500 h-20 w-full">hero zero are you ok </h1>
+<script lang="ts">
+    import Home from "../components/pages/home.svelte";
+</script>
+<Home/>
