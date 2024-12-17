@@ -1,1 +1,1 @@
-<h1>hero zero are you ok </h1>
+<h1 class="bg-green-500 h-20 w-full">hero zero are you ok </h1>
